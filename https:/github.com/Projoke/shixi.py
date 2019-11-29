@@ -39,7 +39,7 @@ def listnum(iname=''):
     # 包含失信人信息的字典
     results=data['data'][0].get('result')
     for person in results:
-        print person['iname'] + "\t" + person['disruptTypeName'] + "\t" + person['duty']
+        print person['iname'] + "," + person['caseCode'] + "," + person['disruptTypeName'] + "," +  person['performance'] + ',' + person['areaName']
     # 总共多少条数据
     listNum=data['data'][0].get('listNum')
     print('共'+str(listNum)+'条数据')
